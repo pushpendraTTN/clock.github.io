@@ -29,7 +29,7 @@ function showTime() {
     var ge="Good Evening";
     var ga="Good AfterNoon";
     var gn="Good Night";
-    if(am_pm==="AM"){
+    if(am_pm==="AM" && hour<=4){
         document.getElementById("message").innerHTML= gm;
     }
 
@@ -37,7 +37,7 @@ function showTime() {
         document.getElementById("message").innerHTML= ga;
     }
 
-    else if(am_pm==="PM" && hour>=4 && hour<=9){
+    else if(am_pm==="PM" && hour>=4 && hour<=8){
         document.getElementById("message").innerHTML= ge;
     }
 
